@@ -25,7 +25,7 @@
                     <a href="#services" class="px-3 py-2 hover:text-gray-300">Services</a>
                     <a href="#blog" class="px-3 py-2 hover:text-gray-300">Blog</a>
                     <a href="#testimonials" class="px-3 py-2 hover:text-gray-300">Testimonials</a>
-                    <a href="#contact" class="px-3 py-2 hover:text-gray-300">Contact</a>
+                    <a href="#start-investing" class="px-3 py-2 hover:text-gray-300">Start Your Journey</a>
                 </div>
             </div>
         </div>
@@ -36,8 +36,8 @@
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h1 class="text-5xl font-bold mb-4">Welcome to Shrivista Capital</h1>
             <p class="text-xl mb-8">Your Trusted Partner in Financial Growth</p>
-            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg text-lg font-semibold">
-                Get Started
+            <a href="#start-investing" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg text-lg font-semibold">
+                Start Your Investment Journey
             </a>
         </div>
     </section>
@@ -100,9 +100,16 @@
     </section>
 
     <!-- Investment Profile Form Section -->
-    <section id="contact" class="py-16">
+    <section id="start-investing" class="py-16">
         <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Investment Profile Assessment</h2>
+            <h2 class="text-3xl font-bold text-center mb-6">Personalized Investment Profile</h2>
+            
+            <!-- Introduction Text -->
+            <div class="text-center mb-8 text-gray-600">
+                <p class="mb-4">Begin your journey to financial success with Shrivista Capital. This comprehensive profile helps us understand your financial goals, risk tolerance, and investment preferences to create a personalized investment strategy tailored just for you.</p>
+                <p>Complete the form below, and our expert advisors will analyze your profile to provide personalized investment recommendations.</p>
+            </div>
+            
             <form id="investmentForm" class="space-y-8">
                 <!-- Personal Information -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
@@ -237,11 +244,15 @@
                             <input type="checkbox" required class="mt-1 mr-2">
                             <label class="text-sm">I acknowledge that the information provided is accurate and I understand that Shrivista Capital will use this information to assess my investment profile.</label>
                         </div>
+                        <div class="flex items-start">
+                            <input type="checkbox" required class="mt-1 mr-2">
+                            <label class="text-sm">I agree to Shrivista Capital's privacy policy. We respect your privacy and will keep your information confidential. Your data will only be used to provide you with personalized investment advice.</label>
+                        </div>
                     </div>
                 </div>
 
-                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold">
-                    Submit Assessment Form
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-lg font-semibold text-lg">
+                    Get Personalized Investment Advice
                 </button>
             </form>
         </div>
@@ -256,10 +267,12 @@
 
     <script>
         // Form submission handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
+        document.getElementById('investmentForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your message. We will get back to you soon!');
+            alert('Thank you for your submission. Our team will review your investment profile and contact you within 24-48 hours to discuss personalized investment opportunities.');
             this.reset();
+            // Smooth scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
 </body>
