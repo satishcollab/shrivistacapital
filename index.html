@@ -99,29 +99,149 @@
         </div>
     </section>
 
-    <!-- Contact Form Section -->
+    <!-- Investment Profile Form Section -->
     <section id="contact" class="py-16">
-        <div class="max-w-3xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
-            <form id="contactForm" class="space-y-6">
-                <div>
-                    <label class="block mb-2">Full Name</label>
-                    <input type="text" required class="w-full p-2 border rounded-lg">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Investment Profile Assessment</h2>
+            <form id="investmentForm" class="space-y-8">
+                <!-- Personal Information -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Personal Information</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block mb-2">Full Name*</label>
+                            <input type="text" required class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block mb-2">Date of Investment</label>
+                            <input type="date" class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block mb-2">Email Address*</label>
+                            <input type="email" required class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block mb-2">Phone Number*</label>
+                            <input type="tel" required class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block mb-2">Complete Address*</label>
+                            <textarea rows="2" required class="w-full p-2 border rounded-lg"></textarea>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label class="block mb-2">Email</label>
-                    <input type="email" required class="w-full p-2 border rounded-lg">
+
+                <!-- Financial Health -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Financial Health</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block mb-2">Primary Income Source*</label>
+                            <select required class="w-full p-2 border rounded-lg">
+                                <option value="">Select Source</option>
+                                <option value="employment">Employment</option>
+                                <option value="business">Business</option>
+                                <option value="rental">Rental Income</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Secondary Income Source</label>
+                            <input type="text" class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block mb-2">Net Monthly Income (INR)*</label>
+                            <input type="number" required class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block mb-2">Monthly Household Expenses (INR)*</label>
+                            <input type="number" required class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block mb-2">EMI/Loan Payments (INR)</label>
+                            <input type="number" class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block mb-2">Total Savings (INR)*</label>
+                            <input type="number" required class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block mb-2">Existing Investments</label>
+                            <textarea placeholder="Please specify types (e.g., FDs, Mutual Funds) and amounts" rows="2" class="w-full p-2 border rounded-lg"></textarea>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label class="block mb-2">Phone</label>
-                    <input type="tel" class="w-full p-2 border rounded-lg">
+
+                <!-- Investment Goals -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Investment Goals</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block mb-2">Primary Investment Goals*</label>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <input type="text" placeholder="Goal 1" required class="w-full p-2 border rounded-lg">
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Timeline (in years)" required class="w-full p-2 border rounded-lg">
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Goal 2" class="w-full p-2 border rounded-lg">
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Timeline (in years)" class="w-full p-2 border rounded-lg">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Required Capital for Goals (INR)*</label>
+                            <textarea placeholder="Specify amount needed for each goal" required rows="2" class="w-full p-2 border rounded-lg"></textarea>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Planned Investment Type*</label>
+                            <select required class="w-full p-2 border rounded-lg">
+                                <option value="">Select Type</option>
+                                <option value="sip">Monthly SIP</option>
+                                <option value="lumpsum">Lump Sum</option>
+                                <option value="both">Both</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label class="block mb-2">Message</label>
-                    <textarea rows="4" required class="w-full p-2 border rounded-lg"></textarea>
+
+                <!-- Risk Assessment -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Risk Assessment</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block mb-2">Risk Tolerance*</label>
+                            <select required class="w-full p-2 border rounded-lg">
+                                <option value="">Select Risk Level</option>
+                                <option value="low">Low - Prefer stable returns with minimal risk</option>
+                                <option value="moderate">Moderate - Balance between risk and returns</option>
+                                <option value="high">High - Willing to take risks for higher returns</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Investment Experience</label>
+                            <textarea placeholder="Please describe your previous investment experience" rows="2" class="w-full p-2 border rounded-lg"></textarea>
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg">
-                    Send Message
+
+                <!-- Acknowledgment -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Acknowledgment</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <input type="checkbox" required class="mt-1 mr-2">
+                            <label class="text-sm">I acknowledge that the information provided is accurate and I understand that Shrivista Capital will use this information to assess my investment profile.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold">
+                    Submit Assessment Form
                 </button>
             </form>
         </div>
