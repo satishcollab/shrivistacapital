@@ -11,9 +11,6 @@
                         url('/api/placeholder/1920/1080') center/cover;
         }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel/7.12.13/babel.min.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -66,13 +63,32 @@
         </div>
     </section>
 
+    <!-- Blog Section -->
+    <section id="blog" class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Latest Insights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <article class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Market Trends 2024</h3>
+                    <p class="mb-4">Analysis of current market trends and future predictions...</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">Read More →</a>
+                </article>
+                <article class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Investment Strategies</h3>
+                    <p class="mb-4">Key investment strategies for the current economic climate...</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">Read More →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-16 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Client Testimonials</h2>
             <div class="relative overflow-hidden" id="testimonialSlider">
                 <div class="flex transition-transform duration-500 ease-in-out" id="testimonialWrapper">
-                    <!-- Testimonial Example -->
+                    <!-- Testimonial 1 -->
                     <div class="w-full md:w-1/2 flex-shrink-0 px-4">
                         <div class="bg-white p-8 rounded-lg shadow-md h-full">
                             <div class="flex items-center mb-4">
@@ -87,7 +103,70 @@
                             <p class="mb-4 text-gray-700">"As a technology professional, I appreciate Shrivista Capital's data-driven approach to investment. Their thorough analysis and regular portfolio updates give me confidence in my financial future. In just 18 months, I've seen remarkable growth in my investments."</p>
                         </div>
                     </div>
-                    <!-- Add more testimonials as needed -->
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="w-full md:w-1/2 flex-shrink-0 px-4">
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl">
+                                    SP
+                                </div>
+                                <div class="ml-4">
+                                    <p class="font-semibold text-lg">Shalini Patel</p>
+                                    <p class="text-gray-600">Business Owner, Mumbai</p>
+                                </div>
+                            </div>
+                            <p class="mb-4 text-gray-700">"Being a business owner, I needed someone who understood both my personal and business financial goals. Shrivista Capital's personalized approach and expert guidance helped me create a balanced investment strategy that works perfectly for both aspects."</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="w-full md:w-1/2 flex-shrink-0 px-4">
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl">
+                                    AM
+                                </div>
+                                <div class="ml-4">
+                                    <p class="font-semibold text-lg">Arun Mehta</p>
+                                    <p class="text-gray-600">Senior Manager, Delhi</p>
+                                </div>
+                            </div>
+                            <p class="mb-4 text-gray-700">"What impressed me most about Shrivista Capital was their commitment to understanding my risk tolerance. They didn't just suggest investments; they educated me about market dynamics and helped me make informed decisions."</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="w-full md:w-1/2 flex-shrink-0 px-4">
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl">
+                                    PG
+                                </div>
+                                <div class="ml-4">
+                                    <p class="font-semibold text-lg">Priya Gupta</p>
+                                    <p class="text-gray-600">Doctor, Chennai</p>
+                                </div>
+                            </div>
+                            <p class="mb-4 text-gray-700">"As a busy medical professional, I needed someone I could trust with my investments. The team at Shrivista Capital has exceeded my expectations. Their transparent communication and proven track record have made me a loyal client."</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="w-full md:w-1/2 flex-shrink-0 px-4">
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl">
+                                    VR
+                                </div>
+                                <div class="ml-4">
+                                    <p class="font-semibold text-lg">Vikram Reddy</p>
+                                    <p class="text-gray-600">Entrepreneur, Hyderabad</p>
+                                </div>
+                            </div>
+                            <p class="mb-4 text-gray-700">"Starting my investment journey was daunting until I found Shrivista Capital. Their step-by-step guidance and regular portfolio reviews have helped me achieve financial goals I once thought were impossible."</p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Navigation Buttons -->
@@ -98,7 +177,7 @@
                 </button>
                 <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg hover:bg-gray-100" onclick="moveTestimonials('next')">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7-7-7-7"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
                 </button>
             </div>
@@ -107,11 +186,196 @@
 
     <!-- Investment Profile Form Section -->
     <section id="start-investing" class="py-16">
-        <div id="react-form-root"></div>
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-6">Personalized Investment Profile</h2>
+            
+            <!-- Introduction Text -->
+            <div class="text-center mb-8 text-gray-600">
+                <p class="mb-4">Begin your journey to financial success with Shrivista Capital. This comprehensive profile helps us understand your financial goals, risk tolerance, and investment preferences to create a personalized investment strategy tailored just for you.</p>
+                <p>Complete the form below, and our expert advisors will analyze your profile to provide personalized investment recommendations.</p>
+            </div>
+            
+            <form id="investmentForm" class="space-y-8">
+                <!-- Personal Information -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Personal Information</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block mb-2">Full Name*</label>
+                            <input type="text" required class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block mb-2">Date of Investment</label>
+                            <input type="date" class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block mb-2">Email Address*</label>
+                            <input type="email" required class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block mb-2">Phone Number*</label>
+                            <input type="tel" required class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block mb-2">Complete Address*</label>
+                            <textarea rows="2" required class="w-full p-2 border rounded-lg"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Financial Health -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Financial Health</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block mb-2">Primary Income Source*</label>
+                            <select id="primaryIncomeSource" required class="w-full p-2 border rounded-lg mb-2">
+                                <option value="">Select Source</option>
+                                <option value="employment">Employment</option>
+                                <option value="business">Business</option>
+                                <option value="rental">Rental Income</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div id="otherIncomeSource" class="hidden">
+                                <input type="text" placeholder="Please specify your income source" class="w-full p-2 border rounded-lg">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Secondary Income Source</label>
+                            <input type="text" class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block mb-2">Net Monthly Income (INR)*</label>
+                            <input type="number" required class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block mb-2">Monthly Household Expenses (INR)*</label>
+                            <input type="number" required class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block mb-2">EMI/Loan Payments (INR)</label>
+                            <input type="number" class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block mb-2">Total Savings (INR)*</label>
+                            <input type="number" required class="w-full p-2 border rounded-lg">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block mb-2">Existing Investments</label>
+                            <textarea placeholder="Please specify types (e.g., FDs, Mutual Funds) and amounts" rows="2" class="w-full p-2 border rounded-lg"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Investment Goals -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Investment Goals</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block mb-2">Primary Investment Goals*</label>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <input type="text" placeholder="Goal 1" required class="w-full p-2 border rounded-lg">
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Timeline (in years)" required class="w-full p-2 border rounded-lg">
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Goal 2" class="w-full p-2 border rounded-lg">
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Timeline (in years)" class="w-full p-2 border rounded-lg">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Required Capital for Goals (INR)*</label>
+                            <textarea placeholder="Specify amount needed for each goal" required rows="2" class="w-full p-2 border rounded-lg"></textarea>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Planned Investment Type*</label>
+                            <select required class="w-full p-2 border rounded-lg">
+                                <option value="">Select Type</option>
+                                <option value="sip">Monthly SIP</option>
+                                <option value="lumpsum">Lump Sum</option>
+                                <option value="both">Both</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Risk Assessment -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Risk Assessment</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block mb-2">Risk Tolerance*</label>
+                            <select required class="w-full p-2 border rounded-lg">
+                                <option value="">Select Risk Level</option>
+                                <option value="low">Low - Prefer stable returns with minimal risk</option>
+                                <option value="moderate">Moderate - Balance between risk and returns</option>
+                                <option value="high">High - Willing to take risks for higher returns</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Investment Experience</label>
+                            <textarea placeholder="Please describe your previous investment experience" rows="2" class="w-full p-2 border rounded-lg"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acknowledgment -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Acknowledgment</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <input type="checkbox" required class="mt-1 mr-2">
+                            <label class="text-sm">I acknowledge that the information provided is accurate and I understand that Shrivista Capital will use this information to assess my investment profile.</label>
+                        </div>
+                        <div class="flex items-start">
+                            <input type="checkbox" required class="mt-1 mr-2">
+                            <label class="text-sm">I agree to Shrivista Capital's privacy policy. We respect your privacy and will keep your information confidential. Your data will only be used to provide you with personalized investment advice.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-lg font-semibold text-lg">
+                    Get Personalized Investment Advice
+                </button>
+            </form>
+        </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>© 2024 Shrivista Capital. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script>
-        // Updated Testimonial Slider with pause on hover
+        // Form submission handling
+        document.getElementById('investmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your submission. Our team will review your investment profile and contact you within 24-48 hours to discuss personalized investment opportunities.');
+            this.reset();
+            // Smooth scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Dynamic form field for "Other" income source
+        document.getElementById('primaryIncomeSource').addEventListener('change', function() {
+            const otherField = document.getElementById('otherIncomeSource');
+            if (this.value === 'other') {
+                otherField.classList.remove('hidden');
+                otherField.querySelector('input').required = true;
+            } else {
+                otherField.classList.add('hidden');
+                otherField.querySelector('input').required = false;
+            }
+        });
+
+        // Testimonial Slider with pause on hover
         let currentSlide = 0;
         let isAutoPlaying = true;
         let slideInterval;
@@ -119,6 +383,7 @@
         const testimonialSlider = document.getElementById('testimonialSlider');
         const slideCount = document.querySelectorAll('#testimonialWrapper > div').length;
 
+        // Update slider styles for smoother transitions
         testimonialWrapper.style.transition = 'transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
 
         function moveTestimonials(direction) {
@@ -148,6 +413,7 @@
             clearInterval(slideInterval);
         }
 
+        // Pause on hover
         testimonialSlider.addEventListener('mouseenter', () => {
             isAutoPlaying = false;
             stopAutoPlay();
@@ -158,16 +424,9 @@
             startAutoPlay();
         });
 
+        // Start the auto-play
         startAutoPlay();
-    </script>
 
-    <script type="text/babel">
-        import { EnhancedForm } from './src/components/EnhancedForm.jsx';
-
-        ReactDOM.render(
-            <EnhancedForm />,
-            document.getElementById('react-form-root')
-        );
     </script>
 </body>
 </html>
