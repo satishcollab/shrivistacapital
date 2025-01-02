@@ -238,16 +238,98 @@
             <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Client Testimonials</h2>
             <div class="relative overflow-hidden" id="testimonialSlider">
                 <div class="flex transition-transform duration-500 ease-in-out" id="testimonialWrapper">
-                    <!-- Each testimonial card -->
+                    <!-- Testimonial 1 -->
                     <div class="w-full md:w-1/2 flex-shrink-0 px-4" data-aos="fade-right" data-aos-delay="100">
-                        <!-- Existing testimonial content -->
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full testimonial-card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl">
+                                    RK
+                                </div>
+                                <div class="ml-4">
+                                    <p class="font-semibold text-lg">Rajesh Kumar</p>
+                                    <p class="text-gray-600">IT Professional, Bangalore</p>
+                                </div>
+                            </div>
+                            <p class="mb-4 text-gray-700">"As a technology professional, I appreciate Shrivista Capital's data-driven approach to investment. Their thorough analysis and regular portfolio updates give me confidence in my financial future. In just 18 months, I've seen remarkable growth in my investments."</p>
+                        </div>
                     </div>
-                    <!-- Repeat for other testimonials with increasing delays -->
+                
+                    <!-- Testimonial 2 -->
                     <div class="w-full md:w-1/2 flex-shrink-0 px-4" data-aos="fade-right" data-aos-delay="200">
-                        <!-- Existing testimonial content -->
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full testimonial-card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl">
+                                    SP
+                                </div>
+                                <div class="ml-4">
+                                    <p class="font-semibold text-lg">Shalini Patel</p>
+                                    <p class="text-gray-600">Business Owner, Mumbai</p>
+                                </div>
+                            </div>
+                            <p class="mb-4 text-gray-700">"Being a business owner, I needed someone who understood both my personal and business financial goals. Shrivista Capital's personalized approach and expert guidance helped me create a balanced investment strategy that works perfectly for both aspects."</p>
+                        </div>
                     </div>
-                    <!-- Continue pattern for remaining testimonials -->
+
+                    <!-- Testimonial 3 -->
+                    <div class="w-full md:w-1/2 flex-shrink-0 px-4" data-aos="fade-right" data-aos-delay="300">
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full testimonial-card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl">
+                                    AM
+                                </div>
+                                <div class="ml-4">
+                                    <p class="font-semibold text-lg">Arun Mehta</p>
+                                    <p class="text-gray-600">Senior Manager, Delhi</p>
+                                </div>
+                            </div>
+                            <p class="mb-4 text-gray-700">"What impressed me most about Shrivista Capital was their commitment to understanding my risk tolerance. They didn't just suggest investments; they educated me about market dynamics and helped me make informed decisions."</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="w-full md:w-1/2 flex-shrink-0 px-4" data-aos="fade-right" data-aos-delay="400">
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full testimonial-card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl">
+                                    PG
+                                </div>
+                                <div class="ml-4">
+                                    <p class="font-semibold text-lg">Priya Gupta</p>
+                                    <p class="text-gray-600">Doctor, Chennai</p>
+                                </div>
+                            </div>
+                            <p class="mb-4 text-gray-700">"As a busy medical professional, I needed someone I could trust with my investments. The team at Shrivista Capital has exceeded my expectations. Their transparent communication and proven track record have made me a loyal client."</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="w-full md:w-1/2 flex-shrink-0 px-4" data-aos="fade-right" data-aos-delay="500">
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full testimonial-card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl">
+                                    VR
+                                </div>
+                                <div class="ml-4">
+                                    <p class="font-semibold text-lg">Vikram Reddy</p>
+                                    <p class="text-gray-600">Entrepreneur, Hyderabad</p>
+                                </div>
+                            </div>
+                            <p class="mb-4 text-gray-700">"Starting my investment journey was daunting until I found Shrivista Capital. Their step-by-step guidance and regular portfolio reviews have helped me achieve financial goals I once thought were impossible."</p>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Navigation Buttons -->
+                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg hover:bg-gray-100" onclick="moveTestimonials('prev')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg hover:bg-gray-100" onclick="moveTestimonials('next')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
@@ -476,7 +558,7 @@
         if (statsSection) {
             observer.observe(statsSection);
         }
-        
+
     </script>
 </body>
 </html>
