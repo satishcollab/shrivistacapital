@@ -1,3 +1,16 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const primaryIncomeSource = document.getElementById('primaryIncomeSource');
+    const otherIncomeSource = document.getElementById('otherIncomeSource');
+
+    primaryIncomeSource.addEventListener('change', function() {
+        if (this.value === 'other') {
+            otherIncomeSource.classList.remove('hidden');
+        } else {
+            otherIncomeSource.classList.add('hidden');
+        }
+    });
+});
+
 // Intersection Observer for scroll animations
 const observerOptions = {
     root: null,

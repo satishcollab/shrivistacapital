@@ -167,7 +167,9 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--neutral-700);
 }
 
-.form-input {
+.form-input,
+.form-select,
+.form-textarea {
   width: 100%;
   padding: 0.75rem 1rem;
   border: 1px solid var(--neutral-300);
@@ -175,48 +177,105 @@ h1, h2, h3, h4, h5, h6 {
   transition: border-color 0.2s ease;
 }
 
-.form-input:focus {
-  outline: none;
-  border-color: var(--primary-500);
-  box-shadow: 0 0 0 3px var(--primary-100);
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--primary-500);
+    box-shadow: 0 0 0 3px var(--primary-100);
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+/* Form Section Styles */
+#start-investing {
+    padding: 4rem 0;
+    background-color: var(--neutral-50);
 }
 
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+#start-investing .container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.fade-in {
-  animation: fadeIn 0.5s ease forwards;
-}
-
-.slide-up {
-  animation: slideUp 0.5s ease forwards;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .h1 {
-    font-size: 2.5rem;
-  }
-  
-  .h2 {
+#start-investing h2 {
+    text-align: center;
     font-size: 2rem;
-  }
-  
-  .container {
-    padding: 0 1rem;
-  }
+    color: var(--neutral-900);
+    margin-bottom: 1.5rem;
+}
+
+#start-investing p {
+    text-align: center;
+    color: var(--neutral-600);
+    margin-bottom: 2rem;
+}
+
+#start-investing form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+#start-investing form h3 {
+    font-size: 1.25rem;
+    color: var(--neutral-900);
+    margin-bottom: 1rem;
+}
+
+#start-investing form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+#start-investing form .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--neutral-700);
+}
+
+#start-investing form .form-group input,
+#start-investing form .form-group select,
+#start-investing form .form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--neutral-300);
+    border-radius: 0.5rem;
+    transition: border-color 0.2s ease;
+}
+
+#start-investing form .form-group input:focus,
+#start-investing form .form-group select:focus,
+#start-investing form .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-500);
+    box-shadow: 0 0 0 3px var(--primary-100);
+}
+
+#start-investing form .form-group .form-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+#start-investing form .form-group .form-checkbox input {
+    margin-right: 0.5rem;
+}
+
+#start-investing form .form-group .form-checkbox label {
+    margin: 0;
+}
+
+#start-investing form button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-600);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+#start-investing form button[type="submit"]:hover {
+    background-color: var(--primary-700);
 }
