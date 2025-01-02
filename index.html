@@ -6,10 +6,56 @@
     <title>Shrivista Capital - Investment Services</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                        url('/api/placeholder/1920/1080') center/cover;
-        }
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                    url('/api/placeholder/1920/1080') center/cover;
+    }
+    
+    /* Enhanced Form Styles */
+    input:focus, select:focus, textarea:focus {
+        outline: none;
+        border-color: #3B82F6;
+        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+    }
+
+    .form-section {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .form-section:hover {
+        transform: translateY(-2px);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-in {
+        animation: fadeIn 0.5s ease-out;
+    }
+
+    /* Enhanced input styles */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    select,
+    textarea {
+        transition: all 0.3s ease;
+        border: 1px solid #E5E7EB;
+    }
+
+    input[type="text"]:hover,
+    input[type="email"]:hover,
+    input[type="tel"]:hover,
+    input[type="number"]:hover,
+    input[type="date"]:hover,
+    select:hover,
+    textarea:hover {
+        border-color: #3B82F6;
+    }
     </style>
 </head>
 <body>
@@ -86,7 +132,7 @@
     <section id="testimonials" class="py-16 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Client Testimonials</h2>
-            <div class="relative overflow-hidden" id="testimonialSlider">
+            <div class="relative overflow-hidden group" id="testimonialSlider">
                 <div class="flex transition-transform duration-500 ease-in-out" id="testimonialWrapper">
                     <!-- Testimonial 1 -->
                     <div class="w-full md:w-1/2 flex-shrink-0 px-4">
@@ -195,7 +241,7 @@
                 <p>Complete the form below, and our expert advisors will analyze your profile to provide personalized investment recommendations.</p>
             </div>
             
-            <form id="investmentForm" class="space-y-8">
+            <form id="investmentForm" class="space-y-8 animate-fade-in">
                 <!-- Personal Information -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-xl font-semibold mb-4">Personal Information</h3>
@@ -375,16 +421,19 @@
             }
         });
 
-        // Testimonial Slider with pause on hover
+        // Enhanced Testimonial Slider
         let currentSlide = 0;
         let isAutoPlaying = true;
         let slideInterval;
+        let touchStartX = 0;
+        let touchEndX = 0;
+
         const testimonialWrapper = document.getElementById('testimonialWrapper');
         const testimonialSlider = document.getElementById('testimonialSlider');
         const slideCount = document.querySelectorAll('#testimonialWrapper > div').length;
 
-        // Update slider styles for smoother transitions
-        testimonialWrapper.style.transition = 'transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+        // Smooth transition
+        testimonialWrapper.style.transition = 'transform 1s cubic-bezier(0.4, 0, 0.2, 1)';
 
         function moveTestimonials(direction) {
             if (direction === 'next') {
@@ -402,6 +451,7 @@
 
         function startAutoPlay() {
             if (!isAutoPlaying) return;
+            stopAutoPlay(); // Clear any existing interval
             slideInterval = setInterval(() => {
                 if (isAutoPlaying) {
                     moveTestimonials('next');
@@ -410,16 +460,47 @@
         }
 
         function stopAutoPlay() {
-            clearInterval(slideInterval);
+            if (slideInterval) {
+                clearInterval(slideInterval);
+            }
         }
 
-        // Pause on hover
+        // Enhanced hover controls
         testimonialSlider.addEventListener('mouseenter', () => {
             isAutoPlaying = false;
             stopAutoPlay();
+            testimonialWrapper.style.transition = 'transform 0.5s ease-out';
         });
 
         testimonialSlider.addEventListener('mouseleave', () => {
+            isAutoPlaying = true;
+            testimonialWrapper.style.transition = 'transform 1s cubic-bezier(0.4, 0, 0.2, 1)';
+            startAutoPlay();
+        });
+
+        // Touch controls for mobile
+        testimonialSlider.addEventListener('touchstart', (e) => {
+            try {
+                touchStartX = e.touches[0].clientX;
+                isAutoPlaying = false;
+                stopAutoPlay();
+            } catch (error) {
+                console.error('Error in touch handling:', error);
+            }
+        });
+
+        testimonialSlider.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].clientX;
+            const diffX = touchStartX - touchEndX;
+
+            if (Math.abs(diffX) > 50) { // Minimum swipe distance
+                if (diffX > 0) {
+                    moveTestimonials('next');
+                } else {
+                    moveTestimonials('prev');
+                }
+            }
+
             isAutoPlaying = true;
             startAutoPlay();
         });
