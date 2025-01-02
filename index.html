@@ -1,18 +1,18 @@
+C:\Users\thesa\gitweb\shrivistacapital\index.html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shrivista Capital - Investment Excellence</title>
-    
-    <!-- Fonts -->
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
+    <title>Shrivista Capital - Investment Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('/api/placeholder/1920/1080') center/cover;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -43,7 +43,28 @@
             </a>
         </div>
     </section>
-    
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Investment Management</h3>
+                    <p>Professional portfolio management tailored to your financial goals and risk tolerance.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Market Analysis</h3>
+                    <p>Detailed market research and analysis to inform your investment decisions.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Financial Planning</h3>
+                    <p>Comprehensive financial planning services to secure your future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Blog Section -->
     <section id="blog" class="py-16">
         <div class="max-w-7xl mx-auto px-4">
@@ -62,12 +83,12 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-16 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Client Testimonials</h2>
-            <div class="relative overflow-hidden group" id="testimonialSlider">
+            <div class="relative overflow-hidden" id="testimonialSlider">
                 <div class="flex transition-transform duration-500 ease-in-out" id="testimonialWrapper">
                     <!-- Testimonial 1 -->
                     <div class="w-full md:w-1/2 flex-shrink-0 px-4">
@@ -84,6 +105,7 @@
                             <p class="mb-4 text-gray-700">"As a technology professional, I appreciate Shrivista Capital's data-driven approach to investment. Their thorough analysis and regular portfolio updates give me confidence in my financial future. In just 18 months, I've seen remarkable growth in my investments."</p>
                         </div>
                     </div>
+                    
                     <!-- Testimonial 2 -->
                     <div class="w-full md:w-1/2 flex-shrink-0 px-4">
                         <div class="bg-white p-8 rounded-lg shadow-md h-full">
@@ -99,6 +121,7 @@
                             <p class="mb-4 text-gray-700">"Being a business owner, I needed someone who understood both my personal and business financial goals. Shrivista Capital's personalized approach and expert guidance helped me create a balanced investment strategy that works perfectly for both aspects."</p>
                         </div>
                     </div>
+
                     <!-- Testimonial 3 -->
                     <div class="w-full md:w-1/2 flex-shrink-0 px-4">
                         <div class="bg-white p-8 rounded-lg shadow-md h-full">
@@ -114,6 +137,7 @@
                             <p class="mb-4 text-gray-700">"What impressed me most about Shrivista Capital was their commitment to understanding my risk tolerance. They didn't just suggest investments; they educated me about market dynamics and helped me make informed decisions."</p>
                         </div>
                     </div>
+
                     <!-- Testimonial 4 -->
                     <div class="w-full md:w-1/2 flex-shrink-0 px-4">
                         <div class="bg-white p-8 rounded-lg shadow-md h-full">
@@ -129,6 +153,7 @@
                             <p class="mb-4 text-gray-700">"As a busy medical professional, I needed someone I could trust with my investments. The team at Shrivista Capital has exceeded my expectations. Their transparent communication and proven track record have made me a loyal client."</p>
                         </div>
                     </div>
+
                     <!-- Testimonial 5 -->
                     <div class="w-full md:w-1/2 flex-shrink-0 px-4">
                         <div class="bg-white p-8 rounded-lg shadow-md h-full">
@@ -145,7 +170,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Navigation Buttons -->
                 <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg hover:bg-gray-100" onclick="moveTestimonials('prev')">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -165,14 +190,14 @@
     <section id="start-investing" class="py-16">
         <div class="max-w-4xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-6">Personalized Investment Profile</h2>
-        
+            
             <!-- Introduction Text -->
             <div class="text-center mb-8 text-gray-600">
                 <p class="mb-4">Begin your journey to financial success with Shrivista Capital. This comprehensive profile helps us understand your financial goals, risk tolerance, and investment preferences to create a personalized investment strategy tailored just for you.</p>
                 <p>Complete the form below, and our expert advisors will analyze your profile to provide personalized investment recommendations.</p>
             </div>
-        
-            <form id="investmentForm" class="space-y-8 animate-fade-in">
+            
+            <form id="investmentForm" class="space-y-8">
                 <!-- Personal Information -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-xl font-semibold mb-4">Personal Information</h3>
@@ -322,46 +347,88 @@
             </form>
         </div>
     </section>
-                
-                    <!-- Footer -->
-                    <footer class="footer">
-                        <div class="container">
-                            <div class="footer-grid">
-                                <div class="footer-brand">
-                                    <img src="assets/images/logo-white.svg" alt="Shrivista Capital" class="footer-logo">
-                                    <p class="footer-tagline">Building wealth through intelligent investments</p>
-                                </div>
-                                
-                                <div class="footer-links">
-                                    <h4>Quick Links</h4>
-                                    <a href="/pages/about.html">About Us</a>
-                                    <a href="/pages/services.html">Services</a>
-                                    <a href="/pages/blog.html">Insights</a>
-                                    <a href="/pages/start-journey.html">Start Investing</a>
-                                </div>
-                                
-                                <div class="footer-contact">
-                                    <h4>Contact Us</h4>
-                                    <p>Email: contact@shrivista.com</p>
-                                    <p>Phone: +91 1234567890</p>
-                                    <div class="social-links">
-                                        <!-- Social media links -->
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="footer-bottom">
-                                <p>&copy; 2024 Shrivista Capital. All rights reserved.</p>
-                                <div class="footer-legal">
-                                    <a href="/privacy-policy">Privacy Policy</a>
-                                    <a href="/terms">Terms of Service</a>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
-                
-                    <!-- Scripts -->
-                    <script src="assets/js/main.js"></script>
-                    <script src="assets/js/slider.js"></script>
-                </body>
-                </html>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>© 2024 Shrivista Capital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handling
+        document.getElementById('investmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your submission. Our team will review your investment profile and contact you within 24-48 hours to discuss personalized investment opportunities.');
+            this.reset();
+            // Smooth scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Dynamic form field for "Other" income source
+        document.getElementById('primaryIncomeSource').addEventListener('change', function() {
+            const otherField = document.getElementById('otherIncomeSource');
+            if (this.value === 'other') {
+                otherField.classList.remove('hidden');
+                otherField.querySelector('input').required = true;
+            } else {
+                otherField.classList.add('hidden');
+                otherField.querySelector('input').required = false;
+            }
+        });
+
+        // Testimonial Slider with pause on hover
+        let currentSlide = 0;
+        let isAutoPlaying = true;
+        let slideInterval;
+        const testimonialWrapper = document.getElementById('testimonialWrapper');
+        const testimonialSlider = document.getElementById('testimonialSlider');
+        const slideCount = document.querySelectorAll('#testimonialWrapper > div').length;
+
+        // Update slider styles for smoother transitions
+        testimonialWrapper.style.transition = 'transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+
+        function moveTestimonials(direction) {
+            if (direction === 'next') {
+                currentSlide = (currentSlide + 1) % slideCount;
+            } else {
+                currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+            }
+            updateSlider();
+        }
+
+        function updateSlider() {
+            const offset = currentSlide * -100;
+            testimonialWrapper.style.transform = `translateX(${offset}%)`;
+        }
+
+        function startAutoPlay() {
+            if (!isAutoPlaying) return;
+            slideInterval = setInterval(() => {
+                if (isAutoPlaying) {
+                    moveTestimonials('next');
+                }
+            }, 5000);
+        }
+
+        function stopAutoPlay() {
+            clearInterval(slideInterval);
+        }
+
+        // Pause on hover
+        testimonialSlider.addEventListener('mouseenter', () => {
+            isAutoPlaying = false;
+            stopAutoPlay();
+        });
+
+        testimonialSlider.addEventListener('mouseleave', () => {
+            isAutoPlaying = true;
+            startAutoPlay();
+        });
+
+        // Start the auto-play
+        startAutoPlay();
+
+    </script>
+</body>
+</html>
